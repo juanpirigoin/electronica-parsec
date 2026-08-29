@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import { Navbar } from './components/layout/Navbar';
 import { Ingresos } from './pages/Ingresos';
@@ -11,7 +11,7 @@ import './styles/global.css';
 export function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="app-container">
           <Navbar />
           <main className="main-content">
@@ -23,7 +23,7 @@ export function App() {
             </Routes>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 }
