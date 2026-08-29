@@ -1,0 +1,108 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.searchGroup {
+  display: flex;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.searchInput, .selectFilter {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  outline: none;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 320px;
+}
+
+.selectFilter {
+  cursor: pointer;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.fullWidth {
+  grid-column: span 2;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.formGroup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: var(--accent-primary);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.actionsCell {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.iconBtn {
+  padding: 0.4rem;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.iconBtn:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.iconBtnDanger:hover {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.imagePreview {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  margin-top: 0.5rem;
+}
